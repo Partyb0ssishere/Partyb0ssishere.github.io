@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! </title>
+    <style>
+        @font-face {
+            font-family: 'TBD';
+            src: url('TBD') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'CustomFont', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .test-text {
+            font-size: 4rem;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .test-text {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .test-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="test-text">Greetings! I'm still not ready for this though…</div>
+</body>
+</html>
