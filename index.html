@@ -3,52 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oh noes!!! </title>
-    <style>
-        @font-face {
-            font-family: 'CEF Fonts';
-            src: url('./fonts/CEFFonts-Regular.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-            color: #ffffff;
-            font-family: 'CEF Fonts', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        
-        .test-text {
-            font-size: 1.5rem;
-            letter-spacing: 0px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        
-        @media (max-width: 768px) {
-            .test-text {
-                font-size: 2.5rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .test-text {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="progressbar.css">
+    <title>!!! </title>
 </head>
 <body>
-    <div class="test-text">
-        Sorry, but you do not have permission to access the content on this website.<br>
-        <small>This is because there is no content at all.</small>
+    <div class="test-text" >
+        <p>
+            We will have a bright future...<br>
+            or will we?<br>
+        </p>
     </div>
+    <!-- ==================== 进度条组件 ==================== -->
+    <div class="progress-wrapper" id="progressWrapper">
+        <!-- 进度条 -->
 
+        <div class="progress-bar" id="progressBar">
+            <!-- 白色填充层 -->
+            <div class="progress-fill" id="progressFill"></div>
+            <!-- 进度文字（mix-blend-mode: difference 自动处理颜色反转） -->
+            <span class="progress-label" id="progressLabel"> 0 / 100 </span>
+        </div>
+        <!-- 右侧百分比 -->
+        <span class="progress-percent" id="progressPercent">0.00%</span>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
